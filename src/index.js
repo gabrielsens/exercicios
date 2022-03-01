@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import BomDia from './components/BomDia';
+import Saudacao from './components/Saudacao';
 
+
+import Primeiro from './components/Primeiro';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <React.StrictMode >
+        <h1>Teste</h1>
+        <Saudacao tipo="1" nome="1" />
+        <BomDia nome="Guilherme" />
+        <BomDia nome="Gabriel" bemVindo="Seja muito bem vindo" />
+        <Primeiro />
+    </React.StrictMode>
+    , document.getElementById('root')
+)
